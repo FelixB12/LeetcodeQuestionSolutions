@@ -1,3 +1,4 @@
+import java.util.HashSet;
 
 public class ValidSudoku {
     public boolean isValidSudoku(char[][] board) {
@@ -35,7 +36,7 @@ public class ValidSudoku {
             set.clear();
         }
 
-        // Test Squars
+        // Test Squares
         if (!testSquares(0, 0, board) || !testSquares(0, 3, board) || !testSquares(0, 6, board)
                 || !testSquares(3, 0, board) || !testSquares(3, 3, board) || !testSquares(3, 6, board)
                 || !testSquares(6, 0, board) || !testSquares(6, 3, board) || !testSquares(6, 6, board)) {
